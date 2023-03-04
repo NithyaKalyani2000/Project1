@@ -1,11 +1,11 @@
 import './App.css';
-import Login from './Login';
+import Login from './Pages/Login';
 import {
   BrowserRouter,
   Switch,
   Route,
 } from "react-router-dom";
-import PageOne from './PageOne';
+import PageOne from './Pages/PageOne';
 
 function App() {
   return (

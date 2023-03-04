@@ -4,7 +4,7 @@ import { Card } from '@mui/material';
 import { Button } from '@mui/material';
 import { useHistory } from "react-router-dom";
 import toast from 'react-simple-toasts';
-import './App.css'
+import '../App.css'
 
 const Reg_Mobilenumber = /^[6-9]{1}[0-9]{9}$/;
 const Reg_OTP = /(^\d{4}$)/;
@@ -119,14 +119,14 @@ const Login = () => {
                             <div style={{ flexDirection: 'row', display: "flex", marginTop: "30px", justifyContent: "center", gap: "20px" }}>
                                 <div>
                                     <Button variant="outlined" color="success" style={{ borderRadius: 7 }}>
-                                        <img src={require('./icons8-whatsapp-50.png')} width={"20px"} />
+                                        <img src={require('../Assets/icons8-whatsapp-50.png')} width={"20px"} />
                                         <a style={{ textTransform: "capitalize", paddingLeft: "3px" }}>Whatsapp</a>
                                     </Button>
                                 </div>
 
                                 <div>
                                     <Button variant="outlined" color="info" style={{ borderRadius: 7 }}>
-                                        <img src={require('./icons8-google-48.png')} width={"20px"} />
+                                        <img src={require('../Assets/icons8-google-48.png')} width={"20px"} />
                                         <a style={{ textTransform: "capitalize", paddingLeft: "3px" }}>Google</a>
                                     </Button>
                                 </div>
@@ -146,7 +146,7 @@ const Login = () => {
                         : (
                             <div style={{ flexDirection: "column", display: 'flex' }}>
                                 <div style={{ paddingLeft: "60px", marginTop: "-50px" }} onClick={() => History.push('/')}>
-                                    <img style={{ float: "left" }} src={require('./icons8-back-arrow-24.png')} width="40px" height="40px" />
+                                    <img style={{ float: "left" }} src={require('../Assets/icons8-back-arrow-24.png')} width="40px" height="40px" />
                                 </div>
                                 <div>
                                     <p style={{ fontSize: 26, fontWeight: "bold" }}> Enter OTP </p>
