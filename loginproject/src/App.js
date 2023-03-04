@@ -1,7 +1,7 @@
 import './App.css';
 import Login from './Login';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Switch,
   Route,
 } from "react-router-dom";
@@ -10,16 +10,12 @@ import PageOne from './PageOne';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter forceRefresh>
         <Switch>
-          <Route exact path="/">
-            <Login/>
-            </Route>
-          <Route exact path="/PageOne">
-            <PageOne/>
-            </Route>
+          <Route path="/PageOne" component={PageOne} exact/>
+          <Route path="/" component={Login} exact />
         </Switch>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
